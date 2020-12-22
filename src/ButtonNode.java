@@ -11,7 +11,7 @@ public class ButtonNode extends JButton{
 
     public ButtonNode(String text){
         super(text);
-        pos = Integer.parseInt(text);
+        //pos = Integer.parseInt(text);
     }
 
 }

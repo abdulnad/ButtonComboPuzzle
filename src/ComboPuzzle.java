@@ -11,7 +11,8 @@ public class ComboPuzzle extends JFrame implements  ActionListener{
     ButtonNode first;
     int size=0;
     boolean pressed = false;
-
+    ButtonNode[] bnarr = new ButtonNode[7];
+    int points = 0;
     ComboPuzzle(){
 
         /*Frame Setup*/
@@ -25,7 +26,11 @@ public class ComboPuzzle extends JFrame implements  ActionListener{
         List<Integer> al = Arrays.asList(arr);
         Collections.shuffle(Arrays.asList(arr));
         //Adding first button
-        first = new ButtonNode(al.get(0)+"");
+        first = new ButtonNode("");
+        first.setBackground(Color.RED);
+        first.setOpaque(true);
+        first.setBorderPainted(false);
+
         ButtonNode og = first;
         size++;
         //Adding first button to frame
@@ -42,10 +47,13 @@ public class ComboPuzzle extends JFrame implements  ActionListener{
         }
         */
         //All Buttons Setup
-        ButtonNode[] bnarr = new ButtonNode[7];
+
         List<ButtonNode> bnlist = Arrays.asList(bnarr);
         for (int i=1;i<al.size();i++){
-            ButtonNode newNode = new ButtonNode(al.get(i)+"");
+            ButtonNode newNode = new ButtonNode("");
+            newNode.setBackground(Color.RED);
+            newNode.setOpaque(true);
+            newNode.setBorderPainted(false);
             newNode.next = null;
             this.first.next = newNode;
             first.next.prev = first;
@@ -56,7 +64,7 @@ public class ComboPuzzle extends JFrame implements  ActionListener{
             //this.add(first);
         }
         bnlist.get(6).next = og;
-        bnlist.get(0).prev = bnlist.get(6);
+        bnlist.get(6).next.prev = bnlist.get(6);
         Collections.shuffle(Arrays.asList(bnarr));
         for(int i=0;i<bnlist.size();i++){
             this.add(bnlist.get(i));
@@ -69,7 +77,7 @@ public class ComboPuzzle extends JFrame implements  ActionListener{
 
     }
     public void displayList(){
-        System.out.print(first.pos);
+        System.out.print(first.getText());
         ButtonNode cursor = first.prev;
         for (int i=0;i<size;i++){
             System.out.print(" -> " + cursor.getText());
@@ -109,17 +117,34 @@ public class ComboPuzzle extends JFrame implements  ActionListener{
         if (pressed==false){
             bn.setEnabled(false);
             pressed = true;
+            bn.setBackground(Color.GREEN);
         }
         else{
             if(bn.prev.isEnabled()==false){
                 bn.setEnabled(false);
-                System.out.println("Good!");
+                points++;
+                bn.setBackground(Color.GREEN);
             }
             else{
-                System.out.println("NOPE!");
+                ButtonNode cursor = first;
+                for(int i=0;i<size;i++){
+                    cursor.setEnabled(true);
+                    cursor.setBackground(Color.RED);
+                    cursor = cursor.next;
+                }
+                points=0;
+                pressed = false;
+                this.setEnabled(true);
             }
         }
+        System.out.println(points);
+        if(points==7){
+            JOptionPane.showMessageDialog(null,"You did it!","You win",JOptionPane.PLAIN_MESSAGE);
+            this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+
+        }
     }
+
 
 
 }

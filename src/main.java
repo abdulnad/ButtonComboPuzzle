@@ -9,7 +9,6 @@ public class main{
 
     public static void main(String[] args) {
         ComboPuzzle puzzle = new ComboPuzzle();
-        puzzle.displayList();
     }
 
 
