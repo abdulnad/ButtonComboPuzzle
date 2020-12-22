@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9ebc32da-cead-45ce-9d3a-c55b4b52cfae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ButtonComboPuzzle/CircularLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ButtonComboPuzzle/CircularLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ButtonComboPuzzle/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ButtonNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

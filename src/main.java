@@ -6,10 +6,10 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class main{
-    JButton button = new JButton();
 
     public static void main(String[] args) {
-
+        ComboPuzzle puzzle = new ComboPuzzle();
+        puzzle.displayList();
     }
 
 
