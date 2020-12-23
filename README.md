@@ -6,5 +6,5 @@ to be pressed before and after a specific button.
 
 ## **Example**
 
-![Pokemon] 
-(/Users/abdullahnaderi/Downloads/cynd.png)
+![] (https://vignette.wikia.nocookie.net/sonicpokemon/images/a/a2/155_cyndaquil_by_pklucario.png/revision/latest?cb=20130617041606)
+
