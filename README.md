@@ -7,4 +7,4 @@ to be pressed before and after a specific button.
 ## **Example**
 
 ![Pokemon] 
-(cynd.png)
+(/Users/abdullahnaderi/Downloads/cynd.png)
