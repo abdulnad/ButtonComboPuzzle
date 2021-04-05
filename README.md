@@ -12,3 +12,6 @@ This is no traditional code lock. Each button needs to be pushed in a certain or
 
 This project showcases my knowledge of inheritance, linked lists, and basic java swing (GUI). Linked Lists was the primary data structure utilzed in this project. This project consists of a linkled lists build from scratch of a class of ButtonNode. ButtonNode extends JButton which is then used to create a linkedlist of ButtonNode classes. Feel free to navigate to the src file and view the open source of my class files. 
 
+![Image]
+(https://imgur.com/a/nm8Z2ni)
+
