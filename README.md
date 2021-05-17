@@ -18,7 +18,11 @@ Here we have eight buttons. Each of them are unpressed at the moment.
 
 <img src="https://i.imgur.com/rqipHgG.png" alt="drawing" length = "400" width="500"/>
 
-We need to 
+We need to find the sequence pattern to unlock this combination. Let's do some trial and error.
+
+<img src="https://media.giphy.com/media/xn8TbcrB8s6JLf94Eb/giphy.gif" alt="drawing" length = "400" width="500"/>
+
+We found one sequence
 
 
 
