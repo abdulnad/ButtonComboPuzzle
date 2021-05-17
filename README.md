@@ -28,6 +28,10 @@ We found one sequence that's starts with button 1 to button 7.
 
 Here, we have a new sequence where button 5 can be pressed before button 1. So now we have a new sequence that goes from button 5-1-7. We can keep trying to figure out what comes after button 7 or what comoes befofore button 5, either way works.
 
+<img src="https://i.imgur.com/OCoXkfV.png" alt="drawing" length = "400" width="500"/>
+
+After the combination is fully unlocked, we have won!
+
 
 
 
